@@ -1,0 +1,50 @@
+
+    /* Add your custom CSS styles here */
+
+    /* Example styles for the virtual art gallery */
+    body{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(45deg,#0a0a0a,#3a4452); */
+    background-image: linear-gradient(to bottom right, rgb(23, 143, 212), rgb(8, 233, 38));
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .artwork {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .artwork img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .artwork:hover {
+      transform: scale(1.05);
+    }
+
+    .artwork-details {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(94, 197, 245, 0.7);
+      color: #250404;
+      padding: 10px;
+      font-size: 14px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .artwork:hover .artwork-details {
+      opacity: 1;
+    }
+  
